@@ -9,6 +9,7 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - **📦 Código Aberto**: Stack composta por soluções open-source de terceiros, implantadas seguindo boas práticas de cada mantenedor
 - **🔄 Automação de Supply Chain**: Fluxos de trabalho automatizados para garantir a cadeia de suprimento, com geração de dados e relatórios comprobatórios
 - **🛠️ Ferramentas e Modelos**: Fornecimento de ferramentas, exemplos de uso e modelos diversos para Automação CI/CD, Monitoramento, IaC (Provisionamento e Configuração), e Captura e Análise de Logs voltados a diagnóstico de falhas, vulnerabilidades, carga e desempenho
+- **📚 Gestão de Configuração**: Soluções para descoberta automática de itens de configuração (Configuration Items - CIs) e seus relacionamentos, visando a formação e atualização de banco de dados de gestão de configuração (CMDB)
 
 ### 🎯 Funcionalidades
 
@@ -24,6 +25,13 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - 🏗️ Mapeamento de configurações de computação, armazenamento, redes e conformidade
 - 📡 Identificação de soluções SaaS, PaaS, máquinas virtuais, servidores e serviços de armazenamento
 - 📊 Análise de serviços de dados, telemetria, logs e observabilidade
+
+**Gestão de Configuração e CMDB:**
+- 🗂️ Descoberta automática de itens de configuração (Configuration Items - CIs)
+- 🔗 Mapeamento de relacionamentos entre CIs
+- 💾 Formação e atualização automática de banco de dados de gestão de configuração (CMDB)
+- 📋 Rastreabilidade de mudanças em itens de configuração
+- 🔄 Sincronização contínua entre infraestrutura real e CMDB
 
 **Automação e IaC:**
 - 🚀 Ferramentas e modelos para pipelines de CI/CD
@@ -59,7 +67,7 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - Análise de conformidade com frameworks de segurança
 
 ## 🛠️ Tecnologias
-_(Em desenvolvimento)_
+*(Em desenvolvimento)*
 
 O projeto está em fase inicial de desenvolvimento. As tecnologias e ferramentas serão definidas conforme a evolução do projeto.
 
@@ -70,7 +78,6 @@ Este projeto está em sua fase inicial. Contribuições, sugestões e feedbacks 
 
 ## 🤝 Como Contribuir
 Contribuições são sempre bem-vindas! Para contribuir:
-
 1. Faça um fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
 3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
