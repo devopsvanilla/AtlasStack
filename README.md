@@ -1,24 +1,30 @@
 # 🗺️ AtlasStack
-
 **logs decifrados, falhas diagnosticadas, servidores configurados.**
 
 ## 📋 Sobre o Projeto
 
-AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a gestão de infraestrutura e operações de sistemas. O projeto tem como objetivo principal fornecer ferramentas e recursos para:
+AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a gestão de infraestrutura e operações de sistemas.
 
-- 🔍 **Decifrar logs**: Análise inteligente de logs de aplicações e sistemas
-- 🔧 **Diagnosticar falhas**: Identificação rápida de problemas e suas causas raiz
-- ⚙️ **Configurar servidores**: Automação e padronização de configurações de infraestrutura
+### 🔒 Características Principais
 
-## 🎯 Propósito
+- **🏠 IA Local**: Todas as IAs do AtlasStack são executadas localmente, garantindo privacidade total dos dados sem necessidade de conexão à Internet
+- **📦 Código Aberto**: Stack composta por soluções open-source de terceiros, implantadas seguindo boas práticas de cada mantenedor
+- **🔄 Automação de Supply Chain**: Fluxos de trabalho automatizados para garantir a cadeia de suprimento, com geração de dados e relatórios comprobatórios
 
-O AtlasStack nasceu da necessidade de criar uma solução centralizada que auxilie profissionais de DevOps, SRE e administradores de sistemas nas tarefas diárias de:
+### 🎯 Funcionalidades
 
-- Monitoramento e análise de logs em tempo real
-- Diagnóstico proativo de falhas e anomalias
-- Gerenciamento de configurações de servidores
-- Automação de tarefas operacionais
-- Documentação de infraestrutura
+**Análise e Diagnóstico:**
+- 🔍 Mapeamento de funcionamento de sistemas
+- 🐛 Diagnóstico automatizado de erros
+- 🛡️ Análise de brechas de segurança em scripts Shell
+- 🐳 Auditoria de segurança em containers
+- ☁️ Análise de infraestrutura em nuvens públicas (AWS, Azure, GCP)
+
+**Conformidade e Padrões:**
+- ✅ Padronização e interoperabilidade
+- 📊 Auditoria e conformidade (CIS, NIST, OWASP, LGPD, GDPR)
+- 📄 Documentação e evidências exportáveis
+- 🔐 Análise de soluções open-source e de terceiros em Linux
 
 ## 🚀 Objetivos
 
@@ -35,6 +41,7 @@ O AtlasStack nasceu da necessidade de criar uma solução centralizada que auxil
 - Provisionamento automatizado de configurações em novos servidores
 - Auditoria e compliance de configurações de infraestrutura
 - Troubleshooting guiado para problemas comuns
+- Análise de conformidade com frameworks de segurança
 
 ## 🛠️ Tecnologias
 
