@@ -8,6 +8,7 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - **🏠 IA Local**: Todas as IAs do AtlasStack são executadas localmente, garantindo privacidade total dos dados sem necessidade de conexão à Internet
 - **📦 Código Aberto**: Stack composta por soluções open-source de terceiros, implantadas seguindo boas práticas de cada mantenedor
 - **🔄 Automação de Supply Chain**: Fluxos de trabalho automatizados para garantir a cadeia de suprimento, com geração de dados e relatórios comprobatórios
+- **🛠️ Ferramentas e Modelos**: Fornecimento de ferramentas, exemplos de uso e modelos diversos para Automação CI/CD, Monitoramento, IaC (Provisionamento e Configuração), e Captura e Análise de Logs voltados a diagnóstico de falhas, vulnerabilidades, carga e desempenho
 
 ### 🎯 Funcionalidades
 
@@ -23,6 +24,18 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - 🏗️ Mapeamento de configurações de computação, armazenamento, redes e conformidade
 - 📡 Identificação de soluções SaaS, PaaS, máquinas virtuais, servidores e serviços de armazenamento
 - 📊 Análise de serviços de dados, telemetria, logs e observabilidade
+
+**Automação e IaC:**
+- 🚀 Ferramentas e modelos para pipelines de CI/CD
+- 📝 Templates e exemplos para provisionamento de infraestrutura como código
+- ⚙️ Automação de configuração de ambientes
+- 📈 Modelos de monitoramento e observabilidade
+
+**Captura e Análise de Logs:**
+- 📊 Ferramentas para captura centralizada de logs
+- 🔎 Análise automatizada para diagnóstico de falhas
+- 🔐 Detecção de vulnerabilidades em logs
+- ⚡ Análise de carga e desempenho
 
 **Conformidade e Padrões:**
 - ✅ Padronização e interoperabilidade
@@ -74,5 +87,4 @@ Sandro Cicero - [@devopsvanilla](https://github.com/devopsvanilla)
 Para questões, sugestões ou discussões sobre o projeto, sinta-se à vontade para abrir uma [issue](https://github.com/devopsvanilla/AtlasStack/issues).
 
 ---
-
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
