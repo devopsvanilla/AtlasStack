@@ -2,11 +2,9 @@
 **logs decifrados, falhas diagnosticadas, servidores configurados.**
 
 ## 📋 Sobre o Projeto
-
 AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a gestão de infraestrutura e operações de sistemas.
 
 ### 🔒 Características Principais
-
 - **🏠 IA Local**: Todas as IAs do AtlasStack são executadas localmente, garantindo privacidade total dos dados sem necessidade de conexão à Internet
 - **📦 Código Aberto**: Stack composta por soluções open-source de terceiros, implantadas seguindo boas práticas de cada mantenedor
 - **🔄 Automação de Supply Chain**: Fluxos de trabalho automatizados para garantir a cadeia de suprimento, com geração de dados e relatórios comprobatórios
@@ -20,6 +18,12 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - 🐳 Auditoria de segurança em containers
 - ☁️ Análise de infraestrutura em nuvens públicas (AWS, Azure, GCP)
 
+**Descoberta de Serviços e Dependências:**
+- 🔎 Descoberta automática de serviços e dependências em ambientes híbridos (nuvens públicas e privadas)
+- 🏗️ Mapeamento de configurações de computação, armazenamento, redes e conformidade
+- 📡 Identificação de soluções SaaS, PaaS, máquinas virtuais, servidores e serviços de armazenamento
+- 📊 Análise de serviços de dados, telemetria, logs e observabilidade
+
 **Conformidade e Padrões:**
 - ✅ Padronização e interoperabilidade
 - 📊 Auditoria e conformidade (CIS, NIST, OWASP, LGPD, GDPR)
@@ -27,7 +31,6 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - 🔐 Análise de soluções open-source e de terceiros em Linux
 
 ## 🚀 Objetivos
-
 - **Eficiência Operacional**: Reduzir o tempo necessário para identificar e resolver problemas
 - **Padronização**: Criar padrões de configuração e manutenção de infraestrutura
 - **Automação**: Minimizar intervenções manuais através de automação inteligente
@@ -35,7 +38,6 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - **Colaboração**: Facilitar o trabalho em equipe no gerenciamento de sistemas
 
 ## 📚 Casos de Uso
-
 - Análise centralizada de logs de múltiplos servidores e aplicações
 - Detecção automática de padrões de falha em ambientes de produção
 - Provisionamento automatizado de configurações em novos servidores
@@ -44,19 +46,16 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - Análise de conformidade com frameworks de segurança
 
 ## 🛠️ Tecnologias
-
 _(Em desenvolvimento)_
 
 O projeto está em fase inicial de desenvolvimento. As tecnologias e ferramentas serão definidas conforme a evolução do projeto.
 
 ## 📖 Status do Projeto
-
 🟡 **Em desenvolvimento inicial**
 
 Este projeto está em sua fase inicial. Contribuições, sugestões e feedbacks são muito bem-vindos!
 
 ## 🤝 Como Contribuir
-
 Contribuições são sempre bem-vindas! Para contribuir:
 
 1. Faça um fork do projeto
@@ -66,15 +65,12 @@ Contribuições são sempre bem-vindas! Para contribuir:
 5. Abra um Pull Request
 
 ## 📝 Licença
-
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 👤 Autor
-
-**Sandro Cicero** - [@devopsvanilla](https://github.com/devopsvanilla)
+Sandro Cicero - [@devopsvanilla](https://github.com/devopsvanilla)
 
 ## 📬 Contato
-
 Para questões, sugestões ou discussões sobre o projeto, sinta-se à vontade para abrir uma [issue](https://github.com/devopsvanilla/AtlasStack/issues).
 
 ---
