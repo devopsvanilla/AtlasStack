@@ -1,6 +1,11 @@
 # 🗺️ AtlasStack
 **logs decifrados, falhas diagnosticadas, servidores configurados.**
 
+## ⚠️ Work In Progress (WIP)
+
+> **Este projeto está em desenvolvimento ativo (Work In Progress - WIP)!**  
+> As funcionalidades, estrutura e documentação estão sujeitas a mudanças frequentes.
+
 ## 📋 Sobre o Projeto
 AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a gestão de infraestrutura e operações de sistemas.
 
@@ -52,6 +57,7 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - 🔐 Análise de soluções open-source e de terceiros em Linux
 
 ## 🚀 Objetivos
+
 - **Eficiência Operacional**: Reduzir o tempo necessário para identificar e resolver problemas
 - **Padronização**: Criar padrões de configuração e manutenção de infraestrutura
 - **Automação**: Minimizar intervenções manuais através de automação inteligente
@@ -59,6 +65,7 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - **Colaboração**: Facilitar o trabalho em equipe no gerenciamento de sistemas
 
 ## 📚 Casos de Uso
+
 - Análise centralizada de logs de múltiplos servidores e aplicações
 - Detecção automática de padrões de falha em ambientes de produção
 - Provisionamento automatizado de configurações em novos servidores
@@ -67,17 +74,21 @@ AtlasStack é uma plataforma DevOps desenvolvida para simplificar e otimizar a g
 - Análise de conformidade com frameworks de segurança
 
 ## 🛠️ Tecnologias
-*(Em desenvolvimento)*
+
+(Em desenvolvimento)
 
 O projeto está em fase inicial de desenvolvimento. As tecnologias e ferramentas serão definidas conforme a evolução do projeto.
 
 ## 📖 Status do Projeto
+
 🟡 **Em desenvolvimento inicial**
 
 Este projeto está em sua fase inicial. Contribuições, sugestões e feedbacks são muito bem-vindos!
 
 ## 🤝 Como Contribuir
+
 Contribuições são sempre bem-vindas! Para contribuir:
+
 1. Faça um fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/MinhaFeature`)
 3. Commit suas mudanças (`git commit -m 'Adiciona MinhaFeature'`)
@@ -85,13 +96,17 @@ Contribuições são sempre bem-vindas! Para contribuir:
 5. Abra um Pull Request
 
 ## 📝 Licença
+
 Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 👤 Autor
+
 Sandro Cicero - [@devopsvanilla](https://github.com/devopsvanilla)
 
 ## 📬 Contato
+
 Para questões, sugestões ou discussões sobre o projeto, sinta-se à vontade para abrir uma [issue](https://github.com/devopsvanilla/AtlasStack/issues).
 
 ---
+
 ⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
