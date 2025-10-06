@@ -1,0 +1,111 @@
+name: AtlasStack CI/CD
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  lint:
+    name: Lint Scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: ShellCheck
+        uses: ludeeus/action-shellcheck@master
+        with:
+          scandir: './scripts'
+          
+      - name: Ansible Lint
+        uses: ansible/ansible-lint-action@main
+        with:
+          targets: 'atlasstack_provision.yml'
+  
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Test diagnose script
+        run: |
+          chmod +x scripts/diagnose_logs.sh
+          # Syntax check
+          bash -n scripts/diagnose_logs.sh
+          echo "✅ Script syntax validated"
+          
+      - name: Validate Ansible Playbook
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ansible
+          ansible-playbook atlasstack_provision.yml --syntax-check
+          echo "✅ Playbook syntax validated"
+  
+  security:
+    name: Security Scan
+    runs-on: ubuntu-latest
+    needs: lint
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Run Trivy security scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          scan-ref: '.'
+          format: 'sarif'
+          output: 'trivy-results.sarif'
+          
+      - name: Upload Trivy results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v2
+        with:
+          sarif_file: 'trivy-results.sarif'
+  
+  build:
+    name: Build and Package
+    runs-on: ubuntu-latest
+    needs: [test, security]
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Create artifact
+        run: |
+          mkdir -p dist
+          cp -r scripts dist/
+          cp atlasstack_provision.yml dist/
+          cp README.md dist/
+          cp LICENSE dist/
+          tar -czf atlasstack-${{ github.sha }}.tar.gz dist/
+          
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: atlasstack-package
+          path: atlasstack-${{ github.sha }}.tar.gz
+          retention-days: 30
+  
+  deploy:
+    name: Deploy Documentation
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          keep_files: false
+          
+      - name: Notification
+        run: |
+          echo "✅ AtlasStack CI/CD Pipeline completed successfully!"
+          echo "Commit: ${{ github.sha }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Author: ${{ github.actor }}"
