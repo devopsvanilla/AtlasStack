@@ -1,75 +1,106 @@
 #!/bin/bash
-
 # AtlasStack - Script de Diagnóstico de Logs
 # Analisa logs do sistema em busca de erros, warnings e padrões de falha
+# Agora usando common.sh para padronização
 
 set -euo pipefail
 
-# Cores para output
-RED='\033[0;31m'
-YELLOW='\033[1;33m'
-GREEN='\033[0;32m'
-NC='\033[0m' # No Color
+# ==========================
+# Importa funções comuns
+# ==========================
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+COMMON_SH="${SCRIPT_DIR}/common.sh"
 
-# Diretórios de logs
+if [[ -f "$COMMON_SH" ]]; then
+    # shellcheck source=./common.sh
+    source "$COMMON_SH"
+else
+    echo "ERRO: Arquivo common.sh não encontrado em ${SCRIPT_DIR}" >&2
+    exit 1
+fi
+
+# ==========================
+# Configurações do script
+# ==========================
 LOG_DIRS=("/var/log" "/var/log/syslog" "/var/log/auth.log")
 OUTPUT_FILE="diagnose_report_$(date +%Y%m%d_%H%M%S).txt"
 
-echo "🔍 AtlasStack - Iniciando diagnóstico de logs..."
-echo "" > "$OUTPUT_FILE"
+# ==========================
+# Funções de análise
+# ==========================
 
-# Função para análise de erros
 analyze_errors() {
-    echo -e "${YELLOW}Analisando erros críticos...${NC}"
+    log_info "Analisando erros críticos..."
     echo "=== ERROS CRÍTICOS ===" >> "$OUTPUT_FILE"
     
     for log_dir in "${LOG_DIRS[@]}"; do
-        if [ -r "$log_dir" ]; then
+        if [[ -r "$log_dir" ]]; then
             grep -i "error\|critical\|fail" "$log_dir" 2>/dev/null | tail -n 50 >> "$OUTPUT_FILE" || true
         fi
     done
 }
 
-# Função para análise de warnings
 analyze_warnings() {
-    echo -e "${YELLOW}Analisando warnings...${NC}"
+    log_info "Analisando warnings..."
     echo "" >> "$OUTPUT_FILE"
     echo "=== WARNINGS ===" >> "$OUTPUT_FILE"
     
-    grep -i "warning\|warn" /var/log/syslog 2>/dev/null | tail -n 30 >> "$OUTPUT_FILE" || true
+    if [[ -r "/var/log/syslog" ]]; then
+        grep -i "warning\|warn" /var/log/syslog 2>/dev/null | tail -n 30 >> "$OUTPUT_FILE" || true
+    fi
 }
 
-# Função para análise de autenticação
 analyze_auth() {
-    echo -e "${YELLOW}Analisando tentativas de autenticação...${NC}"
+    log_info "Analisando tentativas de autenticação..."
     echo "" >> "$OUTPUT_FILE"
     echo "=== AUTENTICAÇÃO ===" >> "$OUTPUT_FILE"
     
-    grep -i "failed\|failure" /var/log/auth.log 2>/dev/null | tail -n 20 >> "$OUTPUT_FILE" || true
+    if [[ -r "/var/log/auth.log" ]]; then
+        grep -i "failed\|failure" /var/log/auth.log 2>/dev/null | tail -n 20 >> "$OUTPUT_FILE" || true
+    fi
 }
 
-# Função para estatísticas
 generate_stats() {
-    echo -e "${YELLOW}Gerando estatísticas...${NC}"
+    log_info "Gerando estatísticas..."
     echo "" >> "$OUTPUT_FILE"
     echo "=== ESTATÍSTICAS ===" >> "$OUTPUT_FILE"
     
-    local error_count=$(grep -ic "error" /var/log/syslog 2>/dev/null || echo "0")
-    local warning_count=$(grep -ic "warning" /var/log/syslog 2>/dev/null || echo "0")
+    local error_count=0
+    local warning_count=0
+    
+    if [[ -r "/var/log/syslog" ]]; then
+        error_count=$(grep -ic "error" /var/log/syslog 2>/dev/null || echo "0")
+        warning_count=$(grep -ic "warning" /var/log/syslog 2>/dev/null || echo "0")
+    fi
     
     echo "Total de erros encontrados: $error_count" >> "$OUTPUT_FILE"
     echo "Total de warnings encontrados: $warning_count" >> "$OUTPUT_FILE"
 }
 
-# Execução principal
+# ==========================
+# Função principal
+# ==========================
+
 main() {
+    log_info "═══════════════════════════════════════════════════════════════"
+    log_info "    🔍 AtlasStack - Iniciando diagnóstico de logs"
+    log_info "═══════════════════════════════════════════════════════════════"
+    echo ""
+    
+    # Inicializa arquivo de saída
+    echo "" > "$OUTPUT_FILE"
+    
+    # Executa análises
     analyze_errors
     analyze_warnings
     analyze_auth
     generate_stats
     
-    echo -e "${GREEN}✅ Diagnóstico concluído!${NC}"
-    echo -e "${GREEN}Relatório salvo em: $OUTPUT_FILE${NC}"
+    echo ""
+    log_success "Diagnóstico concluído!"
+    log_info "Relatório salvo em: $OUTPUT_FILE"
+    log_info "═══════════════════════════════════════════════════════════════"
 }
 
+# Executa main
 main "$@"
