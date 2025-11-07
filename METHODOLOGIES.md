@@ -123,7 +123,7 @@ No AtlasStack, o DevSecOps é implementado através de:
 
 ### Descrição
 
-Site Reliability Engineering (SRE) é uma disciplina que aplica princípios de engenharia de software para resolver problemas operacionais e construir sistemas altamente confiáveis e escaláveis. Originada no Google, a abordagem SRE enfatiza a automação, o uso de métricas objetivas (SLIs, SLOs, SLAs) e o equilíbrio entre velocidade de inovação e estabilidade operacional.
+Site Reliability Engineering (SRE) é uma disciplina que aplica princípios de engenharia de software para resolver problemas operacionais e construir sistemas altamente confiáveis e escaláveis. Originada no Google, a abordagem SRE enfatiza a automação, o uso de métricas objetivas (SLIs, SLOs, SLAs) e o equilíbrio entre velocidade de inovação e estabilidade operacional. Para profissionais que desejam certificar seus conhecimentos em SRE, o DevOps Institute oferece a certificação SRE Foundation (https://www.devopsinstitute.com/certifications/sre-foundation/), que valida o entendimento dos princípios fundamentais, práticas e ferramentas de Site Reliability Engineering.
 
 ### Objetivos
 
