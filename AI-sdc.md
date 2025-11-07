@@ -6,7 +6,7 @@ Este documento apresenta a solução de desenvolvimento assistido por IA utiliza
 
 ---
 
-> 🔗 **Link para o SDC no Miro**: [Visualizar Solution Design Canvas interativo](https://github.com/devopsvanilla/AtlasStack/blob/main/AI-sdc.md)
+> 🔗 **Link para o SDC no Miro**: [Visualizar Solution Design Canvas interativo](https://miro.com/welcomeonboard/QmtyWGsyTzhkeGk0Z3Z2K096TWVRVVBKL0lRcVp5UG5xWW9FdHNvc0NxZmgyQ210Q3lhMGh4RTE3WWpURllLZWhPL05uOHI2VUU0M0FtM2d2cDNsWGJyKzI0WHIvMW1nMkQzdWx6UCtUM0g2NkJhU0ppTlZwUmJ6S1c3WDFDT2J0R2lncW1vRmFBVnlLcVJzTmdFdlNRPT0hdjE=?share_link_id=233210555976)
 
 ### 📦 Independência e Modularidade
 
