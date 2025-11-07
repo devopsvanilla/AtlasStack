@@ -6,6 +6,8 @@ Este documento apresenta a solução de desenvolvimento assistido por IA utiliza
 
 ---
 
+> 🔗 **Link para o SDC no Miro**: [Visualizar Solution Design Canvas interativo](https://github.com/devopsvanilla/AtlasStack/blob/main/AI-sdc.md)
+
 ### 📦 Independência e Modularidade
 
 **Esta stack pode ser utilizada de forma independente**, sem depender das demais funcionalidades do AtlasStack. Sob o ponto de vista de produto, esta é uma **feature autônoma** que pode ser:
