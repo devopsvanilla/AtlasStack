@@ -177,7 +177,7 @@ No AtlasStack, o foco em Developer Experience se manifesta através de:
 
 ## REFERÊNCIAS
 
-BEYER, B. et al. **Site Reliability Engineering**: How Google Runs Production Systems. Sebastopol: O'Reilly Media, 2016.
+BEYER, B. et al. **Site Reliability Engineering**: How Google Runs Production Systems. Sebastopol: O'Reilly Media, 2016. Disponível em: https://sre.google/sre-book/table-of-contents/. Acesso em: 07 nov. 2025.
 
 FORSGREN, N.; HUMBLE, J.; KIM, G. **Accelerate**: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations. Portland: IT Revolution Press, 2018.
 
@@ -185,7 +185,7 @@ KIM, G. et al. **The DevOps Handbook**: How to Create World-Class Agility, Relia
 
 MIRO. **Canvas de Soluções para Aplicativos de Negócios**. Disponível em: https://miro.com/pt/modelos/solution-canvas-business-applications/. Acesso em: 07 nov. 2025.
 
-MURPHY, N. R.; BEYER, B.; JONES, C.; PETOFF, J. **Site Reliability Workbook**: Practical Ways to Implement SRE. Sebastopol: O'Reilly Media, 2018.
+MURPHY, N. R.; BEYER, B.; JONES, C.; PETOFF, J. **Site Reliability Workbook**: Practical Ways to Implement SRE. Sebastopol: O'Reilly Media, 2018. Disponível em: https://sre.google/workbook/table-of-contents/. Acesso em: 07 nov. 2025.
 
 SHEILD, H. **Solution Design Canvas**: A Collaborative Framework for Designing Business Applications. Miro Platform, 2020. Disponível em: https://miro.com/pt/modelos/solution-canvas-business-applications/. Acesso em: 07 nov. 2025.
 
