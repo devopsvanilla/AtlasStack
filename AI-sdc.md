@@ -56,6 +56,15 @@ Criar uma **stack open source** que combine:
 - Precisam de ambientes padronizados e reproduzíveis
 - Requerem esteira CI/CD com segurança integrada
 - Desejam reduzir custos com ferramentas proprietárias
+- Desejam reduzir custos com ferramentas proprietárias
+
+**Equipes de Operações de TI**
+
+- Precisam de ferramentas para gestão e monitoramento de infraestrutura
+- Buscam automação para reduzir tarefas repetitivas e erros humanos
+- Requerem visibilidade e observabilidade de sistemas em produção
+- Valorizam praticas SRE e DevOps para melhorar confiabilidade
+- Desejam integração com pipelines CI/CD e GitOps
 
 **Projetos Open Source**
 - Necessitam de transparência e auditabilidade
@@ -236,6 +245,28 @@ graph TB
 - Desenvolvimento em qualquer lugar
 - Integração contínua sem atrito
 - Feedback rápido
+
+### Caso de Uso 4: Gestão de Infraestrutura com GitOps
+
+**Cenário**: Equipe de Operações de TI gerenciando infraestrutura de produção
+
+**Fluxo**:
+
+1. Repositório Git como fonte única da verdade para configurações
+2. Declarações de infraestrutura como código (IaC)
+3. Pipelines automatizados aplicam mudanças via pull requests
+4. Monitoramento contínuo com Prometheus e Grafana
+5. Alertas automáticos via inteligencia de IA
+6. Reversões instantâneas via rollback de commits
+7. Audit trail completo de todas as mudanças
+
+**Benefícios**:
+
+- Gestão declarativa e versionada de infraestrutura
+- Rastreabilidade completa de mudanças
+- Recuperação rápida de desastres
+- Conformidade e auditoria simplificadas
+- Redução de erros de configuração manual
 
 ---
 
