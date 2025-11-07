@@ -144,7 +144,7 @@ Criar uma **stack open source** que combine:
 | **Sugestões** | Continue | Autocompletar inteligente e sugestões contextuais enquanto você digita |
 | **Estruturação** | Roo Code | Geração de múltiplos arquivos, organização de projetos e scaffolding com IA |
 | **Execução Local** | Ollama / LM Studio | Backend local de modelos LLM (DeepSeek, Qwen2, Mistral) com privacidade e autonomia |
-| **Orquestração** | Jan | Planejamento de tarefas complexas com agentes especializados e memória persistente |
+| **Orquestração** | Jan / LLMesh | Planejamento de tarefas complexas com agentes especializados, memória persistente e coordenação de múltiplas ferramentas Gen AI |
 | **Refinamento** | Aider | Refatoração de código com IA, sincronização automática e explicações técnicas |
 | **Exploração** | AutoCodeRover | Navegação e explicação de bases de código grandes ou legadas com IA |
 | **Testes** | AIUnit / TestPilot | Geração automatizada de testes unitários e de integração com IA |
@@ -188,6 +188,42 @@ graph TB
 ```
 
 ---
+
+### Destaque: LLMesh - Plataforma de Orquestração de Ferramentas Agentes de IA
+
+O **[LLMesh](https://github.com/HewlettPackard/llmesh)** é uma plataforma inovadora desenvolvida pela HPE que democratiza a Inteligência Artificial Generativa. Ela complementa a stack AtlasStack ao oferecer:
+
+**Componentes Principais:**
+
+1. **Athon (Biblioteca Python Agêntica)**: Biblioteca que fornece funções e abstrações essenciais para construir aplicações agênticas, servindo como base para criar, orquestrar e gerenciar agentes e workflows de Gen AI
+2. 2. **Plataforma Agentic Tool Mesh**: Plataforma baseada em serviços que oferece ecossis tema completo de ferramentas, APIs e infraestrutura para implantar, operar e escalar aplicações Gen AI em ambientes reais
+  
+   3. **Benefícios para AtlasStack:**
+  
+   4. - 🤝 **Democratização da IA**: Permite criação de ferramentas Gen AI com Low/No Code, tornando acessível para equipes não-técnicas
+      - - 🛠️ **Serviços de Plataforma**: Oferece Chat, RAG (Retrieval-Augmented Generation) e serviços de agentes pré-configurados
+        - - 🧠 **Motor de Raciocínio Agêntico**: Orquestração baseada em LLMs que coordena múltiplas ferramentas trabalhando em conjunto
+          - - 📝 **Memória Agêntica**: Compartilhamento de mensagens de chat entre diferentes usuários e sessões
+            - - 🎮 **Exemplos Práticos**: Inclui chatbot orquestrador, ferramentas para chamada de API, melhoria de texto, geração de código e sistemas multi-agentes
+              - - 🔒 **Governança e Políticas**: Conjunto de políticas para garantir consistência, aderência ética e qualidade
+                - - 📚 **Princípio de Pareto**: Foca em 20% das funcionalidades que cobrem 80% das necessidades, abstraindo complexidade de baixo nível
+                 
+                  - **Integração com AtlasStack:**
+                 
+                  - O LLMesh trabalha em sinergia com outros componentes da stack:
+                 
+                  - - Complementa o **Ollama** para execução local de LLMs, adicionando camada de orquestração
+                    - - Integra-se com **Cline**, **Continue**, **Roo Code** e **Aider** como motor de coordenação de agentes
+                      - - Expande as capacidades do **VSCode** através de workflows agênticos
+                        - - Facilita criação de pipelines de IA que se conectam com **GitHub Actions** e **DevContainers**
+                         
+                          - **Casos de Uso do LLMesh:**
+                         
+                          - - Construção de chatbots que orquestram múltiplas ferramentas Gen AI
+                            - - Criação de sistemas RAG para recuperação de informações de documentos
+                              - - Desenvolvimento de agentes multi-especializados para tarefas complexas
+                                - - Automação de workflows de desenvolvimento com IA
+                                  - - Painel de configuração para customizar ferramentas via interface gráfica
 
 ## 5. CASOS DE USO
 
