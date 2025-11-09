@@ -91,25 +91,14 @@ Criar uma **stack open source** que combine:
 
 ### Vantagens Frente a Soluções Comerciais
 
-✅ **Privacidade Total**
-- Sem dependência de nuvem externa
-- Sem envio de dados para terceiros
-- Controle completo sobre propriedade intelectual
+| Vantagem | Descrição |
+|---|---|
+| ✅ **Privacidade Total** | Sem dependência de nuvem externa; Sem envio de dados para terceiros; Controle completo sobre propriedade intelectual |
+| 💰 **Custo Zero** | Todas as ferramentas são open source; Funciona localmente; Sem licenças ou assinaturas mensais |
+| 🔄 **Flexibilidade Máxima** | Escolha de modelos de IA; Ajuste de fluxos e pipelines; Personalização de agentes |
+| 📋 **Independência Tecnológica** | Sem bloqueios por licenças; Sem integrações proprietárias; Sem limitações de uso |
 
-💰 **Custo Zero**
-- Todas as ferramentas são open source
-- Funciona localmente
-- Sem licenças ou assinaturas mensais
 
-🔧 **Flexibilidade Máxima**
-- Escolha de modelos de IA
-- Ajuste de fluxos e pipelines
-- Personalização de agentes
-
-🎓 **Independência Tecnológica**
-- Sem bloqueios por licenças
-- Sem integrações proprietárias
-- Sem limitações de uso
 
 ---
 
