@@ -49,34 +49,14 @@ Criar uma **stack open source** que combine:
 
 ### Perfil de Usuários
 
-**Desenvolvedores Individuais**
-- Buscam produtividade e assistência inteligente
-- Valorizam privacidade e autonomia
-- Querem ambiente pronto sem configuração complexa
+| Público-Alvo | Principais Necessidades |
+|---|---|
+| **Desenvolvedores Individuais** | Produtividade com assistência inteligente; privacidade e autonomia; ambiente pronto sem configuração complexa |
+| **Equipes de Desenvolvimento** | Ambientes padronizados e reproduzíveis; esteira CI/CD com segurança integrada; redução de custos com ferramentas proprietárias |
+| **Equipes de Operações de TI** | Ferramentas para gestão e monitoramento de infraestrutura; automação para reduzir tarefas repetitivas; visibilidade e observabilidade; SRE e DevOps; integração com CI/CD e GitOps |
+| **Projetos Open Source** | Transparência e auditabilidade; independência tecnológica; soluções comunitárias |
+| **Empresas com Conformidade** | Segurança de propriedade intelectual; dados confidenciais não saem do ambiente; requisitos regulatórios (LGPD, GDPR, etc.) |
 
-**Equipes de Desenvolvimento**
-- Precisam de ambientes padronizados e reproduzíveis
-- Requerem esteira CI/CD com segurança integrada
-- Desejam reduzir custos com ferramentas proprietárias
-- Desejam reduzir custos com ferramentas proprietárias
-
-**Equipes de Operações de TI**
-
-- Precisam de ferramentas para gestão e monitoramento de infraestrutura
-- Buscam automação para reduzir tarefas repetitivas e erros humanos
-- Requerem visibilidade e observabilidade de sistemas em produção
-- Valorizam praticas SRE e DevOps para melhorar confiabilidade
-- Desejam integração com pipelines CI/CD e GitOps
-
-**Projetos Open Source**
-- Necessitam de transparência e auditabilidade
-- Buscam independência tecnológica
-- Valorizam soluções comunitárias
-
-**Empresas com Requisitos de Conformidade**
-- Preocupações com segurança de propriedade intelectual
-- Necessidade de dados confidenciais não saírem do ambiente controlado
-- Requisitos regulatórios (LGPD, GDPR, etc.)
 
 ---
 
