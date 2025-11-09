@@ -64,30 +64,15 @@ Criar uma **stack open source** que combine:
 
 ### O que esta stack entrega
 
-🧠 **Assistência de Codificação com IA Local**
-- Modelos LLM como DeepSeek, Qwen2 e Mistral rodando via Ollama
-- Privacidade total: nenhum dado sai do ambiente local
-- Flexibilidade para escolher e personalizar modelos
+| O que Entrega | Descrição |
+|---|---|
+| 🎣 **Assistência de Codificação com IA Local** | Modelos LLM como DeepSeek, Qwen2 e Mistral rodando via Ollama; Privacidade total: nenhum dado sai do ambiente local; Flexibilidade para escolher e personalizar modelos |
+| 🏠 **Ambiente Isolado e Reproduzível** | DevContainers e GitHub Codespaces; Qualquer desenvolvedor inicia com ambiente pronto; Consistência entre ambientes de desenvolvimento, teste e produção |
+| 💻 **Esteira DevSecOps Automatizada** | GitHub Actions + validações locais com Act; Lint, testes, SAST, SCA automáticos; Qualidade e segurança antes do versionamento |
+| 🤖 **Orquestração Inteligente de Agentes** | Cline, Roo Code, Continue, Jan, Aider; Agentes trabalham juntos para estruturar, refatorar e testar código; Autonomia e inteligência na geração de código |
+| 🚀 **Pronto para Uso como Template** | Basta clonar ou usar como base para novos projetos; Tudo já configurado e documentado; Aceleração no início de projetos |
 
-📦 **Ambiente Isolado e Reproduzível**
-- DevContainers e GitHub Codespaces
-- Qualquer desenvolvedor inicia com ambiente pronto
-- Consistência entre ambientes de desenvolvimento, teste e produção
 
-🛡️ **Esteira DevSecOps Automatizada**
-- GitHub Actions + validações locais com Act
-- Lint, testes, SAST, SCA automáticos
-- Qualidade e segurança antes do versionamento
-
-🤖 **Orquestração Inteligente de Agentes**
-- Cline, Roo Code, Continue, Jan, Aider
-- Agentes trabalham juntos para estruturar, refatorar e testar código
-- Autonomia e inteligência na geração de código
-
-🚀 **Pronto para Uso como Template**
-- Basta clonar ou usar como base para novos projetos
-- Tudo já configurado e documentado
-- Aceleração no início de projetos
 
 ### Vantagens Frente a Soluções Comerciais
 
