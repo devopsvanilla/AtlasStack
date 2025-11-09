@@ -189,41 +189,48 @@ graph TB
 
 ---
 
-### Destaque: LLMesh - Plataforma de Orquestração de Ferramentas Agentes de IA
+### Destaque: LLMesh - Plataforma de Orquestração Gen AI
 
-O **[LLMesh](https://github.com/HewlettPackard/llmesh)** é uma plataforma inovadora desenvolvida pela HPE que democratiza a Inteligência Artificial Generativa. Ela complementa a stack AtlasStack ao oferecer:
+O **[LLMesh](https://github.com/HewlettPackard/llmesh)** é uma plataforma inovadora desenvolvida pela HPE que democratiza a Inteligência Artificial Generativa. Ela complementa a stack AtlasStack ao oferecer uma orquestração inteligente de agentes de IA.
 
-**Componentes Principais:**
+**Componentes Principais do LLMesh**
 
-1. **Athon (Biblioteca Python Agêntica)**: Biblioteca que fornece funções e abstrações essenciais para construir aplicações agênticas, servindo como base para criar, orquestrar e gerenciar agentes e workflows de Gen AI
-2. 2. **Plataforma Agentic Tool Mesh**: Plataforma baseada em serviços que oferece ecossis tema completo de ferramentas, APIs e infraestrutura para implantar, operar e escalar aplicações Gen AI em ambientes reais
-  
-   3. **Benefícios para AtlasStack:**
-  
-   4. - 🤝 **Democratização da IA**: Permite criação de ferramentas Gen AI com Low/No Code, tornando acessível para equipes não-técnicas
-      - - 🛠️ **Serviços de Plataforma**: Oferece Chat, RAG (Retrieval-Augmented Generation) e serviços de agentes pré-configurados
-        - - 🧠 **Motor de Raciocínio Agêntico**: Orquestração baseada em LLMs que coordena múltiplas ferramentas trabalhando em conjunto
-          - - 📝 **Memória Agêntica**: Compartilhamento de mensagens de chat entre diferentes usuários e sessões
-            - - 🎮 **Exemplos Práticos**: Inclui chatbot orquestrador, ferramentas para chamada de API, melhoria de texto, geração de código e sistemas multi-agentes
-              - - 🔒 **Governança e Políticas**: Conjunto de políticas para garantir consistência, aderência ética e qualidade
-                - - 📚 **Princípio de Pareto**: Foca em 20% das funcionalidades que cobrem 80% das necessidades, abstraindo complexidade de baixo nível
-                 
-                  - **Integração com AtlasStack:**
-                 
-                  - O LLMesh trabalha em sinergia com outros componentes da stack:
-                 
-                  - - Complementa o **Ollama** para execução local de LLMs, adicionando camada de orquestração
-                    - - Integra-se com **Cline**, **Continue**, **Roo Code** e **Aider** como motor de coordenação de agentes
-                      - - Expande as capacidades do **VSCode** através de workflows agênticos
-                        - - Facilita criação de pipelines de IA que se conectam com **GitHub Actions** e **DevContainers**
-                         
-                          - **Casos de Uso do LLMesh:**
-                         
-                          - - Construção de chatbots que orquestram múltiplas ferramentas Gen AI
-                            - - Criação de sistemas RAG para recuperação de informações de documentos
-                              - - Desenvolvimento de agentes multi-especializados para tarefas complexas
-                                - - Automação de workflows de desenvolvimento com IA
-                                  - - Painel de configuração para customizar ferramentas via interface gráfica
+| Componente | Descrição |
+|---|---|
+| Athon (Biblioteca Python Agêntica) | Biblioteca que fornece funções e abstrações essenciais para construir, orquestrar e gerenciar agentes e workflows de Gen AI |
+| Plataforma Agentic Tool Mesh | Plataforma baseada em serviços que oferece ecossistema completo de ferramentas, APIs e infraestrutura para implantar, operar e escalar aplicações Gen AI em ambientes reais |
+
+**Benefícios para AtlasStack**
+
+| Benefício | Descrição |
+|---|---|
+| Democratização da IA | Permite criação de ferramentas Gen AI com Low/No Code, tornando acessível para equipes não-técnicas |
+| Serviços de Plataforma | Oferece Chat, RAG (Retrieval-Augmented Generation) e serviços de agentes pré-configurados |
+| Motor de Raciocínio Agêntico | Orquestração baseada em LLMs que coordena múltiplas ferramentas trabalhando em conjunto |
+| Memória Agêntica | Compartilhamento de mensagens de chat entre diferentes usuários e sessões |
+| Exemplos Práticos | Inclui chatbot orquestrador, ferramentas para chamada de API, melhoria de texto, geração de código e sistemas multi-agentes |
+| Governança e Políticas | Conjunto de políticas para garantir consistência, aderência ética e qualidade |
+| Princípio de Pareto | Foca em 20% das funcionalidades que cobrem 80% das necessidades, abstraindo complexidade de baixo nível |
+
+**Integração com AtlasStack**
+
+| Integração | Característica |
+|---|---|
+| Ollama | Execução local de LLMs com camada de orquestração |
+| Cline, Continue, Roo Code, Aider | Coordenação de agentes diversos |
+| VSCode | Expansão para workflows agênticos |
+| GitHub Actions e DevContainers | Criação de pipelines de IA integrados |
+
+**Casos de Uso do LLMesh**
+
+| Caso de Uso | Descrição |
+|---|---|
+| Chatbots Orquestradores de Ferramentas Gen AI | Construção de bots que coordenam múltiplas ferramentas de IA |
+| Sistemas RAG para Recuperação de Documentos | Recuperação inteligente de informações |
+| Agentes Multi-Especializados | Desenvolvimento de agentes para tarefas complexas |
+| Automação de Workflows de Desenvolvimento | Automatização de tarefas recorrentes e pipelines |
+| Painel de Configuração via Interface Gráfica | Customização visual de ferramentas de IA |
+
 
 ## 5. CASOS DE USO
 
